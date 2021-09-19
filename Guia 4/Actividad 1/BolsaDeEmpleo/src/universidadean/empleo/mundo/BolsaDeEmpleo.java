@@ -1,7 +1,7 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad Ean (Bogot√° - Colombia)
- * Departamento de Tecnolog√≠a de la Informaci√≥n y Comunicaciones
+ * Universidad Ean (Bogot· - Colombia)
+ * Departamento de TecnologÌa de la InformaciÛn y Comunicaciones
  * Licenciado bajo el esquema Academic Free License version 2.1
  * <p>
  * Basado en un Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * Es la clase que se encarga de manejar y organizar los aspirantes <br>
  * <b>inv: </b> <br>
  * aspirantes != null <br>
- * En el vector de aspirantes no hay dos o m√°s con el mismo nombre
+ * En el vector de aspirantes no hay dos o m·s con el mismo nombre
  */
 public class BolsaDeEmpleo {
     // -----------------------------------------------------------------
@@ -42,7 +42,7 @@ public class BolsaDeEmpleo {
     }
 
     // -----------------------------------------------------------------
-    // M√©todos
+    // MÈtodos
     // -----------------------------------------------------------------
 
     /**
@@ -59,12 +59,12 @@ public class BolsaDeEmpleo {
      * Agrega un nuevo aspirante a la bolsa
      *
      * @param nombreA           El nombre del aspirante - nombreA != null
-     * @param profesionA        La profesi√≥n del aspirante - profesionA es uno de estos { ADMINISTRADOR, INGENIERO_INDUSTRIAL, CONTADOR, ECONOMISTA }
-     * @param aniosExperienciaA A√±os de experiencia del aspirante - aniosExperienciaA > 0
+     * @param profesionA        La profesiÛn del aspirante - profesionA es uno de estos { ADMINISTRADOR, INGENIERO_INDUSTRIAL, CONTADOR, ECONOMISTA }
+     * @param aniosExperienciaA AÒos de experiencia del aspirante - aniosExperienciaA > 0
      * @param edadA             La edad del aspirante - edadA > 0
-     * @param telefonoA         El tel√©fono del aspirante - telefonoA != null
+     * @param telefonoA         El telÈfono del aspirante - telefonoA != null
      * @param imagenA           La ruta a la imagen del aspirante - imagenA != null
-     * @return Se retorn√≥ true si el aspirante fue adicionado o false de lo contrario
+     * @return Se retornÛ true si el aspirante fue adicionado o false de lo contrario
      */
 
     public boolean agregarAspirante(String nombreA, String profesionA, int aniosExperienciaA, int edadA, String telefonoA, String imagenA) {
@@ -81,7 +81,7 @@ public class BolsaDeEmpleo {
 
     /**
      * Organiza la lista de aspirantes por nombre usando el algoritmo de burbuja. <br>
-     * <b>post: </b>La lista de aspirantes est√° ordenada por nombre (orden ascendente).
+     * <b>post: </b>La lista de aspirantes est· ordenada por nombre (orden ascendente).
      */
     public void ordenarPorNombre() {
         boolean ordenado = false;
@@ -103,8 +103,8 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Organiza la lista de aspirantes por edad usando el algoritmo de selecci√≥n <br>
-     * <b>post: </b>La lista de aspirantes est√° ordenada por edad
+     * Organiza la lista de aspirantes por edad usando el algoritmo de selecciÛn <br>
+     * <b>post: </b>La lista de aspirantes est· ordenada por edad
      */
     public void ordenarPorEdad() {
         int lowestIndex;
@@ -132,8 +132,8 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Organiza la lista de aspirantes por profesi√≥n usando el algoritmo de burbuja <br>
-     * <b>post: </b>El conjunto de aspirantes esta ordenado por profesi√≥n
+     * Organiza la lista de aspirantes por profesiÛn usando el algoritmo de burbuja <br>
+     * <b>post: </b>El conjunto de aspirantes esta ordenado por profesiÛn
      */
     public void ordenarPorProfesion() {
         boolean ordenado = false;
@@ -154,8 +154,8 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Organiza la lista de aspirantes por a√±os de experiencia usando el algoritmo de inserci√≥n <br>
-     * <b>post: </b>La lista de aspirantes est√° ordenada por a√±os de experiencia
+     * Organiza la lista de aspirantes por aÒos de experiencia usando el algoritmo de inserciÛn <br>
+     * <b>post: </b>La lista de aspirantes est· ordenada por aÒos de experiencia
      */
     public void ordenarPorAniosDeExperiencia() {
         for(int i=1;i<aspirantes.size();i++){
@@ -171,10 +171,10 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Busca un Aspirante seg√∫n su nombre y retorna la posici√≥n en la que se encuentra. <br>
+     * Busca un Aspirante seg˙n su nombre y retorna la posiciÛn en la que se encuentra. <br>
      *
      * @param nombre El nombre del aspirante buscado - nombre!=null
-     * @return Se retorn√≥ la posici√≥n donde se encuentra un aspirante con el nombre dado. Si no se encuentra ning√∫n aspirante con ese nombre se retorn√≥ -1.
+     * @return Se retornÛ la posiciÛn donde se encuentra un aspirante con el nombre dado. Si no se encuentra ning˙n aspirante con ese nombre se retornÛ -1.
      */
     public int buscarAspirante(String nombre) {
         if(aspirantes.size() > 0) {
@@ -191,11 +191,11 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Busca un aspirante utilizando una b√∫squeda binaria. <br>
+     * Busca un aspirante utilizando una b˙squeda binaria. <br>
      * <b>pre: </b> La lista de aspirantes se encuentra ordenada por nombre. <br>
      *
      * @param nombre es el nombre del aspirante que se va a buscar - nombre!=null
-     * @return Se retorn√≥ la posici√≥n del aspirante con el nombre dado. Si el aspirante no existe se retorn√≥ -1.
+     * @return Se retornÛ la posiciÛn del aspirante con el nombre dado. Si el aspirante no existe se retornÛ -1.
      */
     public int buscarBinarioPorNombre(String nombre) {
         int l = 0, r = aspirantes.size()- 1;
@@ -224,7 +224,7 @@ public class BolsaDeEmpleo {
     /**
      * Busca el aspirante que tenga la menor edad en la bolsa.
      *
-     * @return Se retorn√≥ la posici√≥n donde se encuentra el aspirante m√°s joven. Si no hay aspirantes en la bolsa se retorn√≥ -1
+     * @return Se retornÛ la posiciÛn donde se encuentra el aspirante m·s joven. Si no hay aspirantes en la bolsa se retornÛ -1
      */
     public int buscarAspiranteMasJoven() {
         int masJoven = 999;
@@ -248,7 +248,7 @@ public class BolsaDeEmpleo {
     /**
      * Busca el aspirante que tenga la mayor edad en la bolsa.
      *
-     * @return Se retorn√≥ la posici√≥n donde se encuentra el aspirante con m√°s edad. Si no hay aspirantes en la bolsa se retorn√≥ -1
+     * @return Se retornÛ la posiciÛn donde se encuentra el aspirante con m·s edad. Si no hay aspirantes en la bolsa se retornÛ -1
      */
     public int buscarAspiranteMayorEdad() {
         int mayorEdad = 0;
@@ -270,9 +270,9 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Busca el aspirante con m√°s a√±os de experiencia en la bolsa.
+     * Busca el aspirante con m·s aÒos de experiencia en la bolsa.
      *
-     * @return Se retorn√≥ la posici√≥n donde se encuentra el aspirante con mayor experiencia. Si no hay aspirantes en la bolsa se retorn√≥ -1
+     * @return Se retornÛ la posiciÛn donde se encuentra el aspirante con mayor experiencia. Si no hay aspirantes en la bolsa se retornÛ -1
      */
     public int buscarAspiranteMayorExperiencia() {
         int mayorExperiencia = 0;
@@ -295,10 +295,10 @@ public class BolsaDeEmpleo {
 
     /**
      * Contrata a un aspirante.<br>
-     * <b>post: </b>Se elimin√≥ el aspirante de la lista de aspirantes.
+     * <b>post: </b>Se eliminÛ el aspirante de la lista de aspirantes.
      *
      * @param nombre El nombre del aspirante a contratar - nombre!=null
-     * @return Se retorn√≥ true si el aspirante estaba registrado en la bolsa o false de lo contrario
+     * @return Se retornÛ true si el aspirante estaba registrado en la bolsa o false de lo contrario
      */
     public boolean contratarAspirante(String nombre) {
         boolean contratado = false;
@@ -314,10 +314,10 @@ public class BolsaDeEmpleo {
     }
 
     /**
-     * Elimina todos los aspirantes de la bolsa cuyos a√±os de experiencia <br>
-     * son menores a la cantidad de a√±os especificada <br>
+     * Elimina todos los aspirantes de la bolsa cuyos aÒos de experiencia <br>
+     * son menores a la cantidad de aÒos especificada <br>
      *
-     * @param aniosExperiencia La cantidad de a√±os con relaci√≥n a la cual se van a eliminar los aspirantes. aniosExperiencia>=0
+     * @param aniosExperiencia La cantidad de aÒos con relaciÛn a la cual se van a eliminar los aspirantes. aniosExperiencia>=0
      * @return La cantidad de aspirantes que fueron eliminados
      */
     public int eliminarAspirantesPorExperiencia(int aniosExperiencia) {
