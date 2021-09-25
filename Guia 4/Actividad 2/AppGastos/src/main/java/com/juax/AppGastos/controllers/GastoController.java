@@ -38,9 +38,9 @@ public class GastoController {
     public String eliminarPorId(@PathVariable("id") Long id){
         boolean ok = this.gastoService.eliminarGasto(id);
         if (ok){
-            return "Se eliminó el usuario con id " +id;
+            return "Se eliminó el producto con id " +id;
         } else {
-            return "No pudo eliminar el usuario con id " +id;
+            return "No se pudo eliminar el producto con id " +id;
         }
     }
 }
